@@ -12,4 +12,11 @@ Examples:
 """
 def sort_by_length(lst):
     # Your code here
+    #lst.sort(key = lambda x: len(x) )
+    #lst.sort(key = len)
+    lst.sort(key = len, reverse = True)
+    print(lst)
 
+sort_by_length(["a", "ccc", "dddd", "bb"])
+sort_by_length(["apple", "pie", "shortcake"])
+sort_by_length(["may", "april", "september", "august"])
